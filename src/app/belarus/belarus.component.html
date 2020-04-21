@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<div>
+  <div >
+    <h2>BELARUS COVID-19</h2>
+  </div>
+  <div >
+<!-- 
+    <div *ngFor="let item of (belarus | async)?.reverse()">
+      <div>{{item.Country}}  {{item.Cases}}     {{item.Status}}<div>
+    </div> -->
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th></th>
+          <th>CountryCode</th>
+          <th></th>
+          <th>Country</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>Cases</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let belaru of (belarus | async)?.reverse()">
+          <td>{{belaru.Date.substr(0,10 )}}</td>
+        <td></td>
+          <td>{{belaru.CountryCode}}</td>
+          <td></td>
+          <td>{{belaru.Country}}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>{{belaru.Cases}}               <P></P>  {{belaru.Status}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
