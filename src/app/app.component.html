@@ -292,7 +292,10 @@
 border-radius: 20;
 font-size: larger;
   }
- 
+  button {  background: #007E3E; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 10px; /* Поля вокруг текста */
+    border-radius: 5px; /* Уголки */}
 
 </style>
 
@@ -305,22 +308,18 @@ font-size: larger;
   />
 
   <span>
-    <li class="nav-item">
-      <a routerLink="poland1" class="nav-link" routerLinkActive="active">POLAND COVID-19</a>
-  </li>
+    
+    <button routerLink="poland1" class="nav-link" routerLinkActive="active">POLAND COVID-19</button>
   </span>
-  <span>
-    <li class="nav-item">
-      <a routerLink="belarus" class="nav-link" routerLinkActive="active">BELARUS COVID-19</a>
-  </li>
-  </span>
-  
+<span>
+
+  <button routerLink="belarus" class="nav-link" routerLinkActive="active" >BELARUS COVID-19</button>
+
+</span>
+<A></A>
+<h2>github/gennadziy</h2>
     <div class="spacer"></div>
 </div>
 <div class="content" role="main">
-    <!-- Highlight Card -->
-    <div class="card highlight-card card-small">
-      <span >github/gennadziy</span>
-    </div>
     
 <router-outlet></router-outlet>
